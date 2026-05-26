@@ -1,3 +1,7 @@
-- name: hello world
-  ansible.bultin.debg:
-    msg: "hello world how are you "
+- name: Hello World Playbook
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Print message
+      ansible.builtin.debug:
+        msg: "Hello world, how are you?"
