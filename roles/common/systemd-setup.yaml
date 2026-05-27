@@ -4,5 +4,5 @@
     dest: "/etc/systemd/system/{{ component }}.service"
 
 - name: daeman reload
-  ansible.builtin.systemd.service:
+  ansible.builtin.systemd.service:  
     daemon_reload: yes  
