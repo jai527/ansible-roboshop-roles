@@ -16,17 +16,17 @@
     path: /app
     state: directory
 
-- name: delete {{ component }} zip file
+- name: delete catalogue zip file
   ansible.builtin.file:
     path: /tmp/catalogue.zip
     state: absent
 
-- name: download {{ component }} application
+- name: download catalogue application
   ansible.builtin.get_url:
     url: "https://roboshop-artifacts.s3.amazonaws.com/catalogue-v3.zip"
     dest: "/tmp/catalogue.zip"
 
-- name: unzip {{ component }} application
+- name: unzip catalogue application
   ansible.builtin.unarchive:
     src: /tmp/catalogue.zip
     dest: /app
