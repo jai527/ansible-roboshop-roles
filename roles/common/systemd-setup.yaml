@@ -3,6 +3,6 @@
     src: catalogue.service
     dest: /etc/systemd/system/catalogue.service 
 
-- name: deman reload
+- name: daeman reload
   ansible.builtin.systemd.service:
     daemon_reload: yes  
