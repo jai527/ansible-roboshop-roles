@@ -13,3 +13,7 @@
     home: /app
     shell: /sbin/nologin
     comment: "roboshop system user"
+  
+- name: install dependencies
+  community.general.npm:
+    path: /app
