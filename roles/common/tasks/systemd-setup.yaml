@@ -5,4 +5,4 @@
 
 - name: daeman reload
   ansible.builtin.systemd.service:  
-    daemon_reload: yes  
+    daemon_reload: true
