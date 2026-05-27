@@ -1,7 +1,7 @@
 - name: catalogue service
-  ansible.builtin.copy:
+  ansible.builtin.template:
     src: catalogue.service
-    dest: /etc/systemd/system/catalogue.service 
+    dest: /etc/systemd/system/catalogue.service
 
 - name: daeman reload
   ansible.builtin.systemd.service:
